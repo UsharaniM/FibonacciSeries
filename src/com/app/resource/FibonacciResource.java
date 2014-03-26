@@ -32,11 +32,11 @@ public class FibonacciResource {
 	@GET
     
    // @Path here defines method level path.
-	@Path("/fibonacci/{end}")
+	@Path("/fibonacci/{fibElementLength}/FibonacciSeries")
 	
 	// @PathParam injects the value of URI parameter that defined in @Path
 	// expression into the method.
-	public String getFibonacci(@PathParam("end") int fibonacciElements) 
+	public String getFibonacci(@PathParam("fibElementLength") int fibonacciElements) 
 	{
 		SeriesImpl sl = new SeriesImpl();
 		String Fibseries = null;
